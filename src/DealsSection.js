@@ -74,7 +74,7 @@ function DealsSection({ user, accessToken, selectedType, onAddToCart, onRequireL
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
 
-        {filteredProducts.slice(0, 8).map((product) => (
+        {filteredProducts.map((product) => (
 
           <div key={product.id} className="bg-white rounded-lg shadow-sm hover:shadow-lg transition-shadow overflow-hidden">
 

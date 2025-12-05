@@ -21,19 +21,21 @@ function CategoryGrid({ onTypeSelect }) {
     'Djembe': '',
     'Harmonium': 'https://mridangas-buacket.s3.us-east-1.amazonaws.com/media/products/CKS04838.JPG',
     'Kansa Metal Instruments': 'https://mridangas-buacket.s3.us-east-1.amazonaws.com/media/products/CKS04887A.jpg',
+    'Kartal': 'https://mridangas-buacket.s3.us-east-1.amazonaws.com/media/products/CKS04894A_1Zx0oPv.jpg',
     'Kartals': 'https://mridangas-buacket.s3.us-east-1.amazonaws.com/media/products/CKS04894A_1Zx0oPv.jpg',
     'Mridangas': 'https://mridangas-buacket.s3.us-east-1.amazonaws.com/media/products/CKS04859.JPG',
+    'Mridanga': 'https://mridangas-buacket.s3.us-east-1.amazonaws.com/media/products/CKS04873_8nVC8t7.JPG',
     'Whomper': 'https://mridangas-buacket.s3.us-east-1.amazonaws.com/media/products/CKS04901A_bJg2Db9.jpg',
     'bag': 'https://mridangas-buacket.s3.us-east-1.amazonaws.com/media/products/CKS04828.JPG'
   };
 
   const defaultCategories = [
-    { type_id: 1, type_name: 'Mobiles', image: categoryImages['Mobiles'] },
-    { type_id: 2, type_name: 'Fashion', image: categoryImages['Fashion'] },
-    { type_id: 3, type_name: 'Appliances', image: categoryImages['Appliances'] },
-    { type_id: 4, type_name: 'Laptops', image: categoryImages['Laptops'] },
-    { type_id: 5, type_name: 'Furniture', image: categoryImages['Furniture'] },
-    { type_id: 6, type_name: 'Groceries', image: categoryImages['Groceries'] },
+    { type_id: 1, type_name: 'Kartal', image: categoryImages['Kartal'] },
+    { type_id: 2, type_name: 'Harmonium', image: categoryImages['Harmonium'] },
+    { type_id: 3, type_name: 'Mridangas', image: categoryImages['Mridangas'] },
+    { type_id: 4, type_name: 'Whomper', image: categoryImages['Whomper'] },
+    { type_id: 5, type_name: 'Covers', image: categoryImages['Covers'] },
+    { type_id: 6, type_name: 'bag', image: categoryImages['bag'] },
   ];
 
   const displayCategories = categories.length > 0 ? categories : defaultCategories;
