@@ -22,7 +22,7 @@ function CategoryGrid({ onTypeSelect }) {
     'Harmonium': 'https://mridangas-buacket.s3.us-east-1.amazonaws.com/media/products/CKS04838.JPG',
     'Kansa Metal Instruments': 'https://mridangas-buacket.s3.us-east-1.amazonaws.com/media/products/CKS04887A.jpg',
     'Kartal': 'https://mridangas-buacket.s3.us-east-1.amazonaws.com/media/products/CKS04894A_1Zx0oPv.jpg',
-    'Kartals': 'https://mridangas-buacket.s3.us-east-1.amazonaws.com/media/products/CKS04894A_1Zx0oPv.jpg',
+    'Kartals': 'https://mridangas-buacket.s3.us-east-1.amazonaws.com/media/products/CKS04895A.jpg',
     'Mridangas': 'https://mridangas-buacket.s3.us-east-1.amazonaws.com/media/products/CKS04859.JPG',
     'Mridanga': 'https://mridangas-buacket.s3.us-east-1.amazonaws.com/media/products/CKS04873_8nVC8t7.JPG',
     'Whomper': 'https://mridangas-buacket.s3.us-east-1.amazonaws.com/media/products/CKS04901A_bJg2Db9.jpg',

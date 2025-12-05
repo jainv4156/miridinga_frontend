@@ -2,6 +2,7 @@ import React from 'react';
 import userIcon from './user.svg';
 import cartIcon from './cart.svg';
 import { Link } from "react-router";
+import logo from "./assets/logo.png"; 
 
 function Header({ onSignInClick, onCartClick, user, onLogout, cartCount }) {
   const [showMenu, setShowMenu] = React.useState(false);
@@ -14,8 +15,16 @@ function Header({ onSignInClick, onCartClick, user, onLogout, cartCount }) {
             to="/"
             className="flex items-center gap-2 text-gray-900 cursor-pointer hover:opacity-80 transition"
           >
-            <div className="size-8 text-primary font-bold">🛍️</div>
-            <h1 className="text-xl font-bold tracking-tight">Mridanga</h1>
+            {/* <div className="size-8 text-primary font-bold">🛍️</div> */}
+            <div className="flex items-center justify-center h-10 w-25 overflow-hidden rounded-l ml-20 ">
+              <img 
+                src={logo}
+                alt='Mridanga Logo'
+                className='h-20 w-auto object-cover'
+              >
+              </img>
+            {/* <h1 className="text-xl font-bold tracking-tight">Mridangas</h1> */}
+            </div>
           </Link>
 
         </div>
