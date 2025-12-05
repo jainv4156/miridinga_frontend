@@ -16,7 +16,7 @@ function Header({ onSignInClick, onCartClick, user, onLogout, cartCount }) {
             className="flex items-center gap-2 text-gray-900 cursor-pointer hover:opacity-80 transition"
           >
             {/* <div className="size-8 text-primary font-bold">🛍️</div> */}
-            <div className="flex items-center justify-center h-10 w-25 overflow-hidden rounded-l ml-20 ">
+            <div className="flex items-center justify-center h-10 w-25 overflow-hidden rounded-md ml-20 ">
               <img 
                 src={logo}
                 alt='Mridanga Logo'
