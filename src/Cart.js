@@ -61,20 +61,20 @@ function Cart({ accessToken, lastCartItem, onClose }) {
               <ul>
                 {displayItems.map((item, idx) => {
                   const quantity = item.quantity || 1;
-                  const totalPriceItem = quantity * item.product?.final_price;
+                  const totalPriceItem = quantity * item.product_detail?.final_price;
                   return (
                     <li
                       key={idx}
                       className="flex flex-col sm:flex-row items-start py-6 border-b border-border-light"
                     >
                       <img
-                        src={item.product?.photo || "https://via.placeholder.com/150"}
-                        alt={item.product?.product_name || "Product"}
+                        src={item.product_detail?.photo || "https://via.placeholder.com/150"}
+                        alt={item.product_detail?.product_name || "Product"}
                         className="w-32 h-32 object-cover rounded mr-6 mb-4 sm:mb-0"
                       />
                       <div className="flex-grow">
                         <h2 className="font-semibold text-lg text-text-light-primary">
-                          {item.product?.product_name || "Product"}
+                          {item.product_detail?.product_name || "Product"}
                         </h2>
 
                         <div className="flex items-center mt-4">
@@ -105,17 +105,17 @@ function Cart({ accessToken, lastCartItem, onClose }) {
                         </p>
 
                         {/* Discount details under total price */}
-                        {item.product?.price &&
-                          item.product?.final_price &&
-                          item.product.price > item.product.final_price && (
+                        {item.product_detail?.price &&
+                          item.product_detail?.final_price &&
+                          item.product_detail.price > item.product_detail.final_price && (
                             <div className="flex items-center gap-2 mt-1 justify-end">
                               <p className="text-sm text-text-light-secondary line-through">
-                                ₹{item.product.price * quantity}
+                                ₹{item.product_detail.price * quantity}
                               </p>
                               <p className="text-sm text-green-600 font-medium">
                                 {getDiscountPercent(
-                                  item.product.price,
-                                  item.product.final_price
+                                  item.product_detail.price,
+                                  item.product_detail.final_price
                                 )}
                                 % Off
                               </p>
